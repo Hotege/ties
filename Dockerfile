@@ -15,7 +15,7 @@ ENV PATH=$GOROOT/bin:$PATH
 ENV GOPROXY=https://goproxy.cn,direct
 ENV GOSUMDB=sum.golang.google.cn
 
-RUN wget -q https://go.dev/dl/go1.27.0.linux-amd64.tar.gz -O /tmp/go.tgz && \
+RUN wget -q https://go.dev/dl/go1.27.3.linux-amd64.tar.gz -O /tmp/go.tgz && \
     tar -C /usr/local -xzf /tmp/go.tgz && \
     rm /tmp/go.tgz && \
     go version
